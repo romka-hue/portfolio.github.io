@@ -3,62 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Romiko - Freelance Web Developer portfolio.">
+    <title>Romiko - Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <nav id="nav_bar">
-        <div class="nav-brand">
-            <a href="#hero_section">MySite</a>
-        </div>
-        <div class="nav-links">
-            <a href="#hero_section">Home</a>
-            <a href="#projects_section">Projects</a>
-            <a href="contacts.html">Contact</a>
-        </div>
-    </nav>
 
-    <section id="hero_section">
-        <div class="hero-content">
-            <h1>Welcome to My Portfolio</h1>
-            <p>A showcase of my projects and skills.</p>
-            <a href="#projects_section" class="cta-button">View My Work</a>
+    <header class="header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html" class="logo-link">
+                    <img src="images/transparent-logo.svg" alt="Roman NRG Logo" class="logo-img">
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active" data-lang-en="Home" data-lang-tr="Ana Sayfa">Home</a></li>
+                    <li><a href="portfolio.html" data-lang-en="Portfolio" data-lang-tr="Portfolyo">Portfolio</a></li>
+                    <li><a href="about.html" data-lang-en="Contact" data-lang-tr="İletişim">Contact</a></li>
+                </ul>
+                <div class="settings-controls">
+                    <button id="theme-toggle" class="theme-toggle-btn" title="Toggle dark mode">
+                        <span class="light-icon">☀️</span>
+                        <span class="dark-icon">🌙</span>
+                    </button>
+                    <div class="language-switcher">
+                        <button data-lang-switch="en" class="lang-btn active">EN</button>
+                        <span class="lang-separator">/</span>
+                        <button data-lang-switch="tr" class="lang-btn">TR</button>
+                    </div>
+                </div>
+            </nav>
         </div>
-    </section>
+    </header>
 
-    <section id="projects_section">
-        <h2>My Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <img src="source/moonbrewproject.png" alt="Project 1">
-                <h3>moonbrew</h3>
-                <p>A brief description of the first project. Highlighting the technologies used and the problem it solves.</p>
-                <div class="project-links">
-                    <a href="https://romka-hue.github.io/cafeshop.github.io/">Live Demo</a>
-                    <a href="#">Source Code</a>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1 data-lang-en="Romiko" data-lang-tr="Romiko">Romiko</h1>
+                <p class="tagline" data-lang-en="Creative Web Developer Building Fast & Modern Websites" data-lang-tr="Hızlı ve Modern Web Siteleri Oluşturan Yaratıcı Web Geliştirici">Creative Web Developer Building Fast & Modern Websites</p>
+                <a href="portfolio.html" class="cta-button" data-lang-en="View My Work" data-lang-tr="Çalışmalarımı Gör">View My Work</a>
+            </div>
+        </section>
+
+        <!-- Intro Section -->
+        <section class="intro container">
+            <h2 data-lang-en="Your Vision, Brought to Life with Code" data-lang-tr="Hayaliniz, Kodla Hayat Buluyor">Your Vision, Brought to Life with Code</h2>
+            <p data-lang-en="As a passionate web developer, I specialize in creating clean, professional, and user-friendly websites. From simple landing pages to more complex web applications, I deliver high-quality code and exceptional results." data-lang-tr="Tutkulu bir web geliştirici olarak, temiz, profesyonel ve kullanıcı dostu web siteleri oluşturma konusunda uzmanım. Basit açılış sayfalarından daha karmaşık web uygulamalarına kadar, yüksek kaliteli kod ve olağanüstü sonuçlar sunuyorum.">
+                As a passionate web developer, I specialize in creating clean, professional, and user-friendly websites. From simple landing pages to more complex web applications, I deliver high-quality code and exceptional results.
+            </p>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services container">
+            <h2 data-lang-en="What I Offer" data-lang-tr="Ne Sunuyorum">What I Offer</h2>
+            <div class="service-cards">
+                <!-- Service Card 1 -->
+                <div class="card">
+                    <h3 data-lang-en="Custom Websites" data-lang-tr="Özel Web Siteleri">Custom Websites</h3>
+                    <p data-lang-en="Tailor-made websites built from scratch to perfectly fit your brand and needs." data-lang-tr="Markanıza ve ihtiyaçlarınıza mükemmel şekilde uyması için sıfırdan oluşturulmuş özel web siteleri."></p>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="card">
+                    <h3 data-lang-en="Responsive Design" data-lang-tr="Duyarlı Tasarım">Responsive Design</h3>
+                    <p data-lang-en="Websites that look and work great on all devices, from desktops to smartphones." data-lang-tr="Masaüstü bilgisayarlardan akıllı telefonlara kadar tüm cihazlarda harika görünen ve çalışan web siteleri."></p>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="card">
+                    <h3 data-lang-en="Performance Optimization" data-lang-tr="Performans Optimizasyonu">Performance Optimization</h3>
+                    <p data-lang-en="Fast-loading websites that provide a smooth user experience and rank better on search engines." data-lang-tr="Pürüzsüz bir kullanıcı deneyimi sağlayan ve arama motorlarında daha iyi sıralanan hızlı yüklenen web siteleri."></p>
                 </div>
             </div>
-            <div class="project-card">
-                <img src="https://via.placeholder.com/300x200" alt="Project 2">
-                <h3>Project Two</h3>
-                <p>A brief description of the second project. Highlighting the technologies used and the problem it solves.</p>
-                <div class="project-links">
-                    <a href="#">Live Demo</a>
-                    <a href="#">Source Code</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="https://via.placeholder.com/300x200" alt="Project 3">
-                <h3>Project Three</h3>
-                <p>A brief description of the third project. Highlighting the technologies used and the problem it solves.</p>
-                <div class="project-links">
-                    <a href="#">Live Demo</a>
-                    <a href="#">Source Code</a>
-                </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p><span data-lang-en="Contact me at: " data-lang-tr="Bana ulaşın: ">Contact me at: </span><a href="mailto:notrandomguynrg@gmail.com">notrandomguynrg@gmail.com</a></p>
+            <div class="social-links">
+                <a href="https://github.com/romka-hue" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/%E1%83%A1%E1%83%90%E1%83%AE%E1%83%94%E1%83%9A%E1%83%98-%E1%83%A3%E1%83%AA%E1%83%9C%E1%83%9D%E1%83%91%E1%83%98%E1%83%90-b69b1a35b/" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/by_roman_nrg/" target="_blank">Instagram</a>
             </div>
         </div>
-    </section>
+    </footer>
 
-    <script src="script.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

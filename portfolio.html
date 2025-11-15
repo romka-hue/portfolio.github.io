@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Romiko, a freelance web developer.">
+    <title>Portfolio - Romiko</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html" class="logo-link">
+                    <img src="images/transparent-logo.svg" alt="Roman NRG Logo" class="logo-img">
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" data-lang-en="Home" data-lang-tr="Ana Sayfa">Home</a></li>
+                    <li><a href="portfolio.html" class="active" data-lang-en="Portfolio" data-lang-tr="Portfolyo">Portfolio</a></li>
+                    <li><a href="about.html" data-lang-en="Contact" data-lang-tr="İletişim">Contact</a></li>
+                </ul>
+                <div class="settings-controls">
+                    <button id="theme-toggle" class="theme-toggle-btn" title="Toggle dark mode"><span class="light-icon">☀️</span><span class="dark-icon">🌙</span></button>
+                    <div class="language-switcher">
+                        <button data-lang-switch="en" class="lang-btn active">EN</button>
+                        <span class="lang-separator">/</span>
+                        <button data-lang-switch="tr" class="lang-btn">TR</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="portfolio-page">
+            <h2 data-lang-en="My Work" data-lang-tr="Çalışmalarım">My Work</h2>
+            <p data-lang-en="Here are some of the projects I'm proud to have worked on." data-lang-tr="İşte üzerinde çalışmaktan gurur duyduğum projelerden bazıları.">Here are some of the projects I'm proud to have worked on.</p>
+            
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item">
+                    <img src="./images/cafeshopproject.png" alt="Project cafeshop Screenshot">
+                    <div class="portfolio-info">
+                        <h3 data-lang-en="coffeeshop" data-lang-tr="kahve dükkanı">coffeeshop</h3>
+                        <p data-lang-en="Here I used html, css and js to make this simple coffee shop website." data-lang-tr="Burada html, css ve js kullanarak bu basit kafe dükkanı web sitesini yaptım.">A brief description of the project, the technologies used, and its purpose.</p>
+                        <a href="https://romka-hue.github.io/cafeshop.github.io/" class="project-link" target="_blank" data-lang-en="View Project" data-lang-tr="Projeyi Görüntüle">View Project</a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/600x400.png/f0f0f0/333?text=Project+Image" alt="Project 2 Screenshot">
+                    <div class="portfolio-info">
+                        <h3 data-lang-en="Project Title 2" data-lang-tr="Proje Başlığı 2">the project will be puted here</h3>
+                        <p data-lang-en="A brief description of the project, the technologies used, and its purpose." data-lang-tr="Projenin kısa bir açıklaması, kullanılan teknolojiler ve amacı.">A brief description of the project, the technologies used, and its purpose.</p>
+                        <a href="#" class="project-link" target="_blank" data-lang-en="View Project" data-lang-tr="Projeyi Görüntüle">View Project</a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/600x400.png/f0f0f0/333?text=Project+Image" alt="Project 3 Screenshot">
+                    <div class="portfolio-info">
+                        <h3 data-lang-en="Project Title 3" data-lang-tr="Proje Başlığı 3">Project Title 3</h3>
+                        <p data-lang-en="A brief description of the project, the technologies used, and its purpose." data-lang-tr="Projenin kısa bir açıklaması, kullanılan teknolojiler ve amacı.">A brief description of the project, the technologies used, and its purpose.</p>
+                        <a href="#" class="project-link" target="_blank" data-lang-en="View Project" data-lang-tr="Projeyi Görüntüle">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <h2 data-lang-en="Ready to Start Your Project?" data-lang-tr="Projenize Başlamaya Hazır mısınız?">Ready to Start Your Project?</h2>
+                <a href="about.html" class="cta-button" data-lang-en="Get In Touch" data-lang-tr="İletişime Geçin">Get In Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p><span data-lang-en="Contact me at: " data-lang-tr="Bana ulaşın: ">Contact me at: </span><a href="mailto:notrandomguynrg@gmail.com">notrandomguynrg@gmail.com</a></p>
+            <div class="social-links">
+                <a href="https://github.com/romka-hue" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/%E1%83%A1%E1%83%90%E1%83%AE%E1%83%94%E1%83%9A%E1%83%98-%E1%83%A3%E1%83%AA%E1%83%9C%E1%83%9D%E1%83%91%E1%83%98%E1%83%90-b69b1a35b/" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/by_roman_nrg/" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
