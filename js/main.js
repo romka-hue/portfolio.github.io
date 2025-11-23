@@ -60,5 +60,24 @@ document.addEventListener('DOMContentLoaded', function() {
     // Apply saved language on load
     setLanguage(currentLang);
 
+    // --- Hero Typing Effect ---
+    const taglineElement = document.querySelector('.hero .tagline');
+    if (taglineElement) {
+        const originalText = taglineElement.textContent;
+        taglineElement.textContent = '';
+        
+        let i = 0;
+        const typeWriter = () => {
+            if (i < originalText.length) {
+                taglineElement.textContent += originalText.charAt(i);
+                i++;
+                setTimeout(typeWriter, 50);
+            }
+        };
+        
+        // Start typing effect after a short delay
+        setTimeout(typeWriter, 800);
+    }
+
     console.log("UI script for theme and language loaded.");
 });
