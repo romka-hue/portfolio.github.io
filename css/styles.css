@@ -489,8 +489,14 @@ body.dark-mode .services::before {
 }
 
 /* --- Portfolio Page --- */
-.portfolio-page h2 { text-align: center; }
-.portfolio-page > p { text-align: center; margin-bottom: 3rem; }
+.coming-soon {
+    background-color: #ccc;
+    color: #666;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: not-allowed;
+}
 
 .portfolio-grid {
     display: grid;
@@ -854,10 +860,7 @@ main {
         font-size: 1.2rem;
     }
     
-    /* Portfolio Page */
-    .portfolio-page h2 {
-        font-size: 1.8rem;
-    }
+
     
     .portfolio-grid {
         grid-template-columns: 1fr;
@@ -1145,10 +1148,7 @@ main {
         font-size: 0.9rem;
     }
     
-    /* Portfolio Page */
-    .portfolio-page h2 {
-        font-size: 1.4rem;
-    }
+
     
     .portfolio-page > p {
         font-size: 0.9rem;
