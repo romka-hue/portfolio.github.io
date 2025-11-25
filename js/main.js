@@ -1,5 +1,4 @@
 // main.js: Handles dark mode and language switching
-
 document.addEventListener('DOMContentLoaded', function() {
     
     // --- Theme (Dark/Light Mode) ---
