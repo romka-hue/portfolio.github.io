@@ -3,9 +3,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // --- Theme (Dark/Light Mode) ---
     const themeToggle = document.getElementById('theme-toggle');
-    const currentTheme = localStorage.getItem('theme');
+    const savedTheme = localStorage.getItem('theme');
+    const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    const currentTheme = savedTheme || systemTheme;
 
-    // Apply saved theme on load
+    // Apply theme on load (saved theme overrides system theme)
     if (currentTheme === 'dark') {
         document.body.classList.add('dark-mode');
     }
